@@ -1,0 +1,11 @@
+C:\Users\anthi\OneDrive\Documents\projects\Budgeting Program\BudgetingProgram\bin\Debug\netcoreapp3.1\BudgetingProgram.exe
+C:\Users\anthi\OneDrive\Documents\projects\Budgeting Program\BudgetingProgram\bin\Debug\netcoreapp3.1\BudgetingProgram.deps.json
+C:\Users\anthi\OneDrive\Documents\projects\Budgeting Program\BudgetingProgram\bin\Debug\netcoreapp3.1\BudgetingProgram.runtimeconfig.json
+C:\Users\anthi\OneDrive\Documents\projects\Budgeting Program\BudgetingProgram\bin\Debug\netcoreapp3.1\BudgetingProgram.runtimeconfig.dev.json
+C:\Users\anthi\OneDrive\Documents\projects\Budgeting Program\BudgetingProgram\bin\Debug\netcoreapp3.1\BudgetingProgram.dll
+C:\Users\anthi\OneDrive\Documents\projects\Budgeting Program\BudgetingProgram\bin\Debug\netcoreapp3.1\BudgetingProgram.pdb
+C:\Users\anthi\OneDrive\Documents\projects\Budgeting Program\BudgetingProgram\obj\Debug\netcoreapp3.1\BudgetingProgram.csprojAssemblyReference.cache
+C:\Users\anthi\OneDrive\Documents\projects\Budgeting Program\BudgetingProgram\obj\Debug\netcoreapp3.1\BudgetingProgram.AssemblyInfoInputs.cache
+C:\Users\anthi\OneDrive\Documents\projects\Budgeting Program\BudgetingProgram\obj\Debug\netcoreapp3.1\BudgetingProgram.AssemblyInfo.cs
+C:\Users\anthi\OneDrive\Documents\projects\Budgeting Program\BudgetingProgram\obj\Debug\netcoreapp3.1\BudgetingProgram.dll
+C:\Users\anthi\OneDrive\Documents\projects\Budgeting Program\BudgetingProgram\obj\Debug\netcoreapp3.1\BudgetingProgram.pdb
