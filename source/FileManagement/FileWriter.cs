@@ -16,7 +16,6 @@ namespace BudgetingProgram {
         public void SaveFile(string file) {
             try {
                 File.WriteAllLines(file);
-                // This comment is a test //
             }
             catch (Exception e) {
                 Console.WriteLine($"File failed to write: {e}");
