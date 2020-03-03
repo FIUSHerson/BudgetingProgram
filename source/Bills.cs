@@ -2,6 +2,7 @@ using System;
 
 namespace BudgetingProgram {
     public class Bills : Misc {
+        Balance Balance = new Balance();
 
         /* Default save percentage */
         public static double SavePercentAmount {get; set;} = 0.20;
@@ -12,8 +13,8 @@ namespace BudgetingProgram {
             if (Continue == true) {
                 // Apply percentage //
                 double Subtract = 1-SavePercentAmount;
-                GlobalVariables.TempBalance = GlobalVariables.TempBalance * Subtract;
-                return GlobalVariables.TempBalance;
+                Balance.temp = Balance.temp * Subtract;
+                return Balance.temp;
             }
             else if (Continue == false) {
                 // Redefine percentage //
@@ -36,8 +37,8 @@ namespace BudgetingProgram {
         public double Insurance() {
             bool Continue = ParseYesOrNo(YesOrNo($"The current insurance amount is {InsuranceCost}. Is that fine with you?"));
             if (Continue == true) {
-                GlobalVariables.TempBalance = GlobalVariables.TempBalance - InsuranceCost;
-                if (GlobalVariables.TempBalance >= 0) {
+                Balance.temp = Balance.temp - InsuranceCost;
+                if (Balance.temp >= 0) {
                     return InsuranceCost;
                 }
                 else {

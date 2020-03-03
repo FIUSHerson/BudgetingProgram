@@ -17,9 +17,10 @@ namespace BudgetingProgram {
         }
         public bool Run() {
             FileManager file = new FileManager();
+            Balance balance = new Balance();
 
             // Copy balance to an editable variable while keeping the original intact. //
-            GlobalVariables.TempBalance = GlobalVariables.InitialBalance;
+            balance.temp = balance.initial;
 
             // Check if save file exists and create one if needed //
             file.CreateFile();
@@ -42,7 +43,7 @@ namespace BudgetingProgram {
                 Console.Write("Please enter your balance after your paycheck : ");
                 
                 try {
-                    GlobalVariables.PaycheckAmount = double.Parse(Console.ReadLine());
+                    Paycheck.Amount = double.Parse(Console.ReadLine());
                     loop = false;
                 }
                 catch(IndexOutOfRangeException) {
@@ -54,6 +55,10 @@ namespace BudgetingProgram {
             }
         }
         public void GetInitialBalance() {
+            // Create a new balance object //
+            Balance balance = new Balance();
+
+            // Set up error loop //
             bool loop = true;
             bool invalid = false;
 
@@ -68,7 +73,7 @@ namespace BudgetingProgram {
                 Console.Write("Please enter your balance after your paycheck : ");
                 
                 try {
-                    GlobalVariables.InitialBalance = double.Parse(Console.ReadLine());
+                    balance.initial = double.Parse(Console.ReadLine());
                     loop = false;
                 }
                 catch(IndexOutOfRangeException) {
