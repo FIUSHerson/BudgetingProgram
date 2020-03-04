@@ -18,13 +18,13 @@ namespace BudgetingProgram {
                 return false;
             }
         }
-        public void CreateFile() {
+        public string CreateFile() {
             // Create the folder if it doesn't exist //
             try {
                 DirectoryInfo di = Directory.CreateDirectory(FileFolder);
             }
             catch (Exception e) {
-                Console.WriteLine($"Creating directory failed with exception {e}.");
+                Console.WriteLine($"Creating directory failed because of {e}.");
             }
 
             // This should just run the method up above me if needed //
@@ -32,8 +32,9 @@ namespace BudgetingProgram {
             /* Create the stored file if file doesn't exist */
             if (CheckForFile(FileLocation) == false) {
                 File.Create(FileLocation);
+                return FileLocation;
             }
-            else return;
+            else return "";
         }
     }
 }

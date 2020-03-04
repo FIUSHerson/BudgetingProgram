@@ -2,9 +2,9 @@ using System;
 
 namespace BudgetingProgram
 {
-    public struct Paycheck
+    public class Paycheck
     {
-        public static double Amount {
+        public double Amount {
             get => Amount;
             set {
                 if (value > 0) Amount = value;

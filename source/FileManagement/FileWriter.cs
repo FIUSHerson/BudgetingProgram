@@ -13,12 +13,14 @@ namespace BudgetingProgram {
             }
             else throw new FileNotFoundException();
         }
-        public void SaveFile(string file) {
+        public void SaveFile(string file, string[] content) {
             try {
-                File.WriteAllLines(file);
+                // Write lines to file //
+                File.WriteAllLines(file, content);
             }
             catch (Exception e) {
-                Console.WriteLine($"File failed to write: {e}");
+                // If writing to file fails //
+                Console.WriteLine($"File failed to write to file due to {e}.");
             }
         }
     }
